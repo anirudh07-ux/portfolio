@@ -1,4 +1,11 @@
 import { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+// ─── EMAILJS CONFIG ───────────────────────────────────────────────────────────
+// Replace these three values with your own from https://www.emailjs.com/
+const EJS_SERVICE_ID  = "service_x81wst2";
+const EJS_TEMPLATE_ID = "template_cy1oqha";
+const EJS_PUBLIC_KEY  = "W9z814hJjUUwo--bo";
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const DATA = {
@@ -9,7 +16,6 @@ const DATA = {
     "I build intelligent systems",
     "Crafting AI-powered solutions",
     "Bridging code & intelligence",
-    "Architecting the next generation of smart applications",
     "Engineering scalable AI-powered applications"
   ],
   description:
@@ -35,7 +41,7 @@ const DATA = {
   ],
   skills: [
     { category: "Backend", items: ["Python", "Django", "REST APIs", "Django Admin"] },
-    { category: "Frontend", items: ["JavaScript", "HTML5", "CSS3", "Responsive Design"] },
+    { category: "Frontend", items: ["JavaScript", "React", "HTML5", "CSS3", "Responsive Design"] },
     { category: "Databases", items: ["SQLite", "MySQL"] },
     { category: "Agentic & Tools", items: ["Agent Design", "Automation", "LLMs",  "Git", "GitHub"] },
   ],
@@ -50,10 +56,10 @@ const DATA = {
     { type: "Enterprise CRM", category: "enterprise", name: "CRM System — Nagarjuna Steels", desc: "Enterprise CRM system for managing customers, leads, and business workflows. Built backend modules and REST APIs with responsive dashboards for operational monitoring.", tags: ["Python", "Django", "REST APIs", "MySQL", "JavaScript"], icon: "🏭", github: "#", live: null },
   ],
   social: [
-    { label: "GitHub", href: "#", abbr: "GH" },
-    { label: "LinkedIn", href: "#", abbr: "LI" },
+    { label: "GitHub", href: "https://github.com/anirudh07-ux", abbr: "GH" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/anirudh-v-84711b315/", abbr: "LI" },
   ],
-  email: "anirudh@example.com",
+  email: "vellankianirudh2001@gmail.com",
   location: "India",
 };
 
@@ -455,8 +461,8 @@ function Styles() {
         text-transform:uppercase;letter-spacing:.1em;font-family:'Courier New',monospace; }
 
       /* ── Experience ── */
-      .tl { position:relative; }
-      .tl::before { content:'';position:absolute;left:15px;top:0;bottom:0;width:1px;
+      .timeline { position:relative; }
+      .timeline::before { content:'';position:absolute;left:15px;top:0;bottom:0;width:1px;
         background:linear-gradient(to bottom,var(--v),var(--c),transparent);opacity:.3; }
       .tli { display:flex;gap:28px;margin-bottom:32px; }
       .tll { display:flex;flex-direction:column;align-items:center;flex-shrink:0;padding-top:6px; }
@@ -689,6 +695,8 @@ export default function Portfolio() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [toast, setToast] = useState(null);
   const [btt, setBtt] = useState(false);
+  const [sending, setSending] = useState(false);
+  const formRef = useRef(null);
 
   const statsRef = useRef(null);
   const [secRef1, sec1] = useReveal();
@@ -723,8 +731,16 @@ export default function Portfolio() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setToast("Message sent! I'll get back to you soon.");
-    setForm({ name: "", email: "", subject: "", message: "" });
+    setSending(true);
+    emailjs.sendForm(EJS_SERVICE_ID, EJS_TEMPLATE_ID, formRef.current, EJS_PUBLIC_KEY)
+      .then(() => {
+        setToast("Message sent! I'll get back to you soon.");
+        setForm({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        setToast("Something went wrong. Please email me directly.");
+      })
+      .finally(() => setSending(false));
   };
 
   return (
@@ -742,7 +758,7 @@ export default function Portfolio() {
       {/* Fixed UI */}
       <div className="spb" style={{ width: `${scrollProg}%` }} />
       {toast && <Toast message={toast} onClose={() => setToast(null)} />}
-      {btt && <button className="btt" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>↑</button>}
+      {btt && <button className="btt" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} aria-label="Back to top">↑</button>}
 
       {/* ── NAV ── */}
       <nav className="nav pc">
@@ -758,7 +774,7 @@ export default function Portfolio() {
               ))}
             </div>
             <button className="ncta" onClick={() => go("contact")}>Hire Me</button>
-            <button className="hbg" onClick={() => setMenuOpen(m => !m)}>
+            <button className="hbg" onClick={() => setMenuOpen(m => !m)} aria-label="Toggle navigation menu">
               <span /><span /><span />
             </button>
           </div>
@@ -853,7 +869,7 @@ export default function Portfolio() {
                 <p>Currently building enterprise-grade systems at <strong>Digital Edify Technologies</strong>, leading end-to-end delivery of intelligent web applications from architecture to deployment.</p>
                 <div className="at-act">
                   <button className="bp" onClick={() => go("contact")}>Let's Work Together →</button>
-                  <button className="bo">Download Resume</button>
+                  <button className="bo" disabled title="Resume coming soon" style={{opacity:0.5,cursor:"not-allowed"}}>Download Resume</button>
                 </div>
               </div>
               <div className="sp">
@@ -867,7 +883,7 @@ export default function Portfolio() {
         <section id="experience" className="sec">
           <div className="cnt-s">
             <SectionHeader num="03 / Experience" title="Professional Journey" sub="My career path in software development" revRef={secRef3} revOn={sec3} />
-            <div className="tl">
+            <div className="timeline">
               {DATA.experience.map((exp, i) => <ExperienceItem key={i} exp={exp} delay={(i % 3) + 1} />)}
             </div>
           </div>
@@ -909,18 +925,20 @@ export default function Portfolio() {
                 </div>
                 <div className="socrow">
                   {DATA.social.map(s => (
-                    <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="socb">{s.abbr}</a>
+                    <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="socb" aria-label={s.label}>{s.abbr}</a>
                   ))}
                 </div>
               </div>
-              <form className="cf" onSubmit={onSubmit}>
+              <form className="cf" ref={formRef} onSubmit={onSubmit}>
                 <div className="frow">
-                  <input className="fi" placeholder="Your Name" required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
-                  <input className="fi" type="email" placeholder="Your Email" required value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
+                  <input className="fi" name="from_name" placeholder="Your Name" required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
+                  <input className="fi" name="from_email" type="email" placeholder="Your Email" required value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
                 </div>
-                <input className="fi" placeholder="Subject" value={form.subject} onChange={e => setForm({ ...form, subject: e.target.value })} />
-                <textarea className="fi fta" placeholder="Your Message" rows={5} required value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} />
-                <button type="submit" className="bp bfw">Send Message →</button>
+                <input className="fi" name="subject" placeholder="Subject" value={form.subject} onChange={e => setForm({ ...form, subject: e.target.value })} />
+                <textarea className="fi fta" name="message" placeholder="Your Message" rows={5} required value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} />
+                <button type="submit" className="bp bfw" disabled={sending}>
+                  {sending ? "Sending…" : "Send Message →"}
+                </button>
               </form>
             </div>
           </div>
