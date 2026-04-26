@@ -188,19 +188,19 @@ function Styles() {
       ul { list-style: none; }
 
       :root {
-        --bg:    #020817;
-        --bg2:   #0b1221;
-        --v:     #7c3aed;
-        --v2:    #9d5bf4;
-        --vl:    #a78bfa;
-        --c:     #06b6d4;
-        --c2:    #22d3ee;
-        --grn:   #34d399;
-        --text:  #f1f5f9;
-        --tm:    #94a3b8;
-        --td:    #475569;
-        --card:  rgba(11,18,33,0.72);
-        --bdr:   rgba(255,255,255,0.06);
+        --bg:    #18181b;
+        --bg2:   #27272a;
+        --v:     #6366f1;
+        --v2:    #818cf8;
+        --vl:    #a5b4fc;
+        --c:     #f59e42;
+        --c2:    #fbbf24;
+        --grn:   #10b981;
+        --text:  #f4f4f5;
+        --tm:    #a1a1aa;
+        --td:    #52525b;
+        --card:  rgba(39,39,42,0.72);
+        --bdr:   rgba(255,255,255,0.08);
         --r:     14px;
         --ease:  all 0.3s cubic-bezier(0.4,0,0.2,1);
       }
