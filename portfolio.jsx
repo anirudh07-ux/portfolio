@@ -21,9 +21,9 @@ const DATA = {
   description:
     "I build full stack web apps with Python and Django, and I'm focused on pushing that further into agentic AI — systems that don't just serve data but actually respond, decide, and act. Based in India, currently working at Digital Edify Technologies.",
   stats: [
-    { value: 6, label: "Months Experience", suffix: "+" },
-    { value: 3, label: "Projects Delivered", suffix: "+" },
-    { value: 1, label: "CRM System", suffix: "" },
+    { value: 1.5, label: "Years Experience", suffix: "+" },
+    { value: 6, label: "Projects Delivered", suffix: "+" },
+    { value: 2, label: "Enterprise Systems", suffix: "" },
   ],
   codeLines: [
     { text: "const developer = {", cls: "cw" },
@@ -35,22 +35,22 @@ const DATA = {
     { text: "};", cls: "cw" },
   ],
   services: [
-    { icon: "python", title: "Python Full Stack Development", desc: "I build complete web applications using Django for the backend and JavaScript for the frontend. I design clean REST APIs, structured databases, and functional admin panels focused on performance and scalability.", tags: ["Python", "Django", "REST APIs", "JavaScript", "HTML/CSS"] },
-    { icon: "ai", title: "Agentic AI Development", desc: "Building backends that go beyond request-response — systems that use LLMs to make decisions, trigger workflows, and operate with minimal human input.", tags: ["AI Agents", "LLMs", "Automation", "Agentic Design"] },
-    { icon: "backend", title: "Backend & API Engineering", desc: "I build structured Django REST APIs that are scalable, maintainable, and designed for real-world application use.", tags: ["Django", "Python", "REST APIs", "SQLite", "MySQL"] },
-    { icon: "dashboard", title: "Dashboards & CRM Systems", desc: "Developed full stack dashboards and CRM systems with real-time data handling, admin panels, and scalable backend architecture.", tags: ["Full Stack", "CRM Systems", "Dashboards", "Admin Panels", "Real-time"] },
+    { icon: "python", title: "Python Full Stack Development", desc: "I build production-ready web applications end-to-end using Django backends and JavaScript frontends. From REST API design to database schema optimization to admin panels, I deliver complete systems with performance and scalability as the foundation.", tags: ["Python", "Django", "REST APIs", "JavaScript", "HTML/CSS"] },
+    { icon: "ai", title: "Agentic AI Development", desc: "I architect intelligent automation systems that go beyond request-response — multi-agent pipelines using LLMs, LangChain, and OpenAI that make autonomous decisions, trigger workflows, and operate 24/7 with zero human intervention.", tags: ["AI Agents", "LLMs", "LangChain", "Automation", "Agentic Design"] },
+    { icon: "dashboard", title: "Dashboards, CRM & HRMS Systems", desc: "I've built enterprise-grade CRM systems and comprehensive HRMS platforms handling the complete employee lifecycle — onboarding, leave management, payroll, real-time dashboards, and complex business workflows with scalable architectures.", tags: ["Full Stack", "CRM Systems", "HRMS", "Dashboards", "Real-time", "Enterprise"] },
+    { icon: "sql", title: "Database Design & SQL", desc: "Expert in architecting scalable database schemas and writing optimized SQL queries. I design for performance using PostgreSQL and MySQL, implementing proper indexing, complex joins, and query optimization for large-scale data processing.", tags: ["PostgreSQL", "MySQL", "SQL", "Database Design", "Query Optimization"] },
   ],
   skills: [
-    { category: "Python & Backend", items: ["Python", "Django", "REST APIs", "Django Admin", "Django ORM"] },
-    { category: "Frontend", items: ["JavaScript", "React", "HTML5", "CSS3", "Responsive Design"] },
-    { category: "Databases", items: ["SQLite", "MySQL"] },
-    { category: "AI & Agentic Engineering", items: ["AI Agents", "LLMs", "Agentic Design", "Automation", "Intelligent Workflows"] },
-    { category: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Postman"] },
+    { category: "AI & LLMs", items: ["OpenAI API", "LangChain", "LangGraph", "Multi-Agent Systems", "Prompt Engineering", "Vector Databases"] },
+    { category: "Backend Development", items: ["Python", "FastAPI", "Django"] },
+    { category: "Frontend Development", items: ["Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"] },
+    { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite"] },
+    { category: "API Integrations", items: ["Slack API", "Freshworks CRM API", "Google Sheets API"] },
   ],
   experience: [
-    { period: "Jan 2026 – Present", role: "Python Full Stack Developer & Agentic AI Developer", company: "Digital Edify Technologies", current: true, points: ["Develop and maintain full stack applications using Python, Django, and REST APIs", "Design backend systems to support AI integrations and automated workflows", "Build and integrate agent-based components for intelligent system functionality", "Deliver production-ready applications from architecture to deployment"] },
-    { period: "May 2025 – Dec 2025", role: "Python Full Stack Developer", company: "Digital Edify Technologies", current: false, points: ["Built full stack web applications using Python, Django, and relational databases", "Developed and integrated REST APIs for scalable frontend-backend communication", "Designed database schemas and implemented core backend features", "Collaborated with team members to deliver stable, production-ready systems"] },
-    { period: "Nov 2024 – Apr 2025", role: "Python Full Stack Developer Intern", company: "Digital Edify Technologies", current: false, points: ["Developed backend modules and REST APIs using Python and Django", "Supported development of internal and client-facing web applications", "Worked on database integration, admin panels, and system features", "Gained hands-on experience with scalable backend and full stack development"] },
+    { period: "Jan 2026 – Present", role: "Agentic AI Developer | Full Stack Python Developer", company: "Digital Edify Technologies", current: true, points: ["Architected and deployed multi-agent AI systems using Python, OpenAI APIs, and LangChain to automate CRM workflows and behavioral analytics", "Built high-performance backend systems with FastAPI & Django REST, designing optimized SQL queries, indexing, and schema models for large-scale data processing", "Delivered end-to-end automation pipelines integrated with Slack, Freshworks, and Google Sheets APIs, reducing manual operations and improving reporting efficiency", "Technologies: Python, OpenAI API, LangChain, LangGraph, FastAPI, Django, PostgreSQL, MySQL"] },
+    { period: "Nov 2024 – Dec 2025", role: "Full Stack Python Developer", company: "Digital Edify Technologies", current: false, points: ["Developed 3+ production-grade full-stack applications using Python, Django, React, and Next.js with scalable architecture", "Designed and optimized relational databases (PostgreSQL/MySQL) with complex SQL queries, joins, and indexing to improve performance and reduce response time", "Built and integrated REST APIs and third-party services (Razorpay, Nodemailer) for enterprise HRMS automation", "Technologies: Python, Django, React, Next.js, PostgreSQL, MySQL, REST APIs"] },
+    { period: "Mar 2024 – Sep 2024", role: "Full Stack Python Developer – Intern", company: "Skill Capital", current: false, points: ["Developed backend modules and REST APIs using Django for real-world applications", "Wrote efficient SQL queries and handled database operations (MySQL/SQLite) for CRUD and data management", "Built responsive frontend interfaces using HTML, CSS, and JavaScript for client-facing applications", "Technologies: Python, Django, MySQL, SQLite, JavaScript, HTML5, CSS3"] },
   ],
   projects: [
     { type: "AI & Agentic Full Stack", category: "agentic", name: "Smart Car Agentic Dashboard", desc: "A Django-powered agentic dashboard where the backend monitors vehicle data and surfaces decisions without the user having to ask. REST APIs feed a live JavaScript frontend in real time.", tags: ["Python", "Django", "REST APIs", "SQLite", "JavaScript", "AI Agents"], image: "/smart-car-dashboard.png", github: null, live: null },
@@ -169,7 +169,7 @@ function SC({ children, className = "" }) {
     >
       <div className="sc-glow" style={{
         opacity: spot.on ? 1 : 0,
-        background: `radial-gradient(360px circle at ${spot.x}px ${spot.y}px, rgba(124,58,237,0.13), transparent 65%)`,
+        background: `radial-gradient(360px circle at ${spot.x}px ${spot.y}px, rgba(59,130,246,0.15), transparent 65%)`,
       }} />
       {children}
     </div>
@@ -188,26 +188,26 @@ function Styles() {
       ul { list-style: none; }
 
       :root {
-        --bg:    #18181b;
-        --bg2:   #27272a;
-        --v:     #6366f1;
-        --v2:    #818cf8;
-        --vl:    #a5b4fc;
-        --c:     #f59e42;
-        --c2:    #fbbf24;
-        --grn:   #10b981;
-        --text:  #f4f4f5;
-        --tm:    #a1a1aa;
-        --td:    #52525b;
-        --card:  rgba(39,39,42,0.72);
-        --bdr:   rgba(255,255,255,0.08);
+        --bg:    #0f172a;
+        --bg2:   #1e293b;
+        --v:     #3b82f6;
+        --v2:    #60a5fa;
+        --vl:    #93c5fd;
+        --c:     #10b981;
+        --c2:    #34d399;
+        --grn:   #06b6d4;
+        --text:  #f8fafc;
+        --tm:    #94a3b8;
+        --td:    #475569;
+        --card:  rgba(30,41,59,0.6);
+        --bdr:   rgba(148,163,184,0.12);
         --r:     14px;
         --ease:  all 0.3s cubic-bezier(0.4,0,0.2,1);
       }
 
       ::-webkit-scrollbar { width: 4px; }
       ::-webkit-scrollbar-track { background: var(--bg); }
-      ::-webkit-scrollbar-thumb { background: linear-gradient(var(--v), var(--c)); border-radius: 2px; }
+      ::-webkit-scrollbar-thumb { background: linear-gradient(var(--v), var(--grn)); border-radius: 2px; }
 
       /* ── Keyframes ── */
       @keyframes pulse   { 0%,100%{opacity:1}50%{opacity:.35} }
@@ -235,9 +235,9 @@ function Styles() {
       /* ── Aurora ── */
       .aurora { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
       .ab { position: absolute; border-radius: 50%; filter: blur(90px); }
-      .ab1 { width:700px;height:700px;top:-120px;right:-120px; background:radial-gradient(circle,rgba(124,58,237,.16) 0%,transparent 70%); animation:blob1 22s ease-in-out infinite; }
-      .ab2 { width:550px;height:550px;bottom:-100px;left:-100px; background:radial-gradient(circle,rgba(6,182,212,.11) 0%,transparent 70%); animation:blob2 28s ease-in-out infinite; }
-      .ab3 { width:450px;height:450px;top:42%;left:28%; background:radial-gradient(circle,rgba(168,85,247,.07) 0%,transparent 70%); animation:blob3 20s ease-in-out infinite; }
+      .ab1 { width:700px;height:700px;top:-120px;right:-120px; background:radial-gradient(circle,rgba(59,130,246,.12) 0%,transparent 70%); animation:blob1 22s ease-in-out infinite; }
+      .ab2 { width:550px;height:550px;bottom:-100px;left:-100px; background:radial-gradient(circle,rgba(6,182,212,.1) 0%,transparent 70%); animation:blob2 28s ease-in-out infinite; }
+      .ab3 { width:450px;height:450px;top:42%;left:28%; background:radial-gradient(circle,rgba(16,185,129,.08) 0%,transparent 70%); animation:blob3 20s ease-in-out infinite; }
 
       /* ── Dot grid ── */
       .dots { position: fixed; inset: 0; z-index: 0; pointer-events: none;
@@ -249,9 +249,9 @@ function Styles() {
 
       /* ── Scroll progress ── */
       .spb { position:fixed;top:0;left:0;height:2px;z-index:300;
-        background:linear-gradient(90deg,var(--v),var(--c));
+        background:linear-gradient(90deg,var(--v),var(--grn));
         transition:width .1s linear;pointer-events:none;
-        box-shadow:0 0 10px rgba(124,58,237,.7); }
+        box-shadow:0 0 10px rgba(59,130,246,.8); }
 
       /* ── Toast ── */
       .toast { position:fixed;bottom:32px;right:32px;z-index:400;
@@ -267,28 +267,28 @@ function Styles() {
       /* ── Back to top ── */
       .btt { position:fixed;bottom:32px;left:32px;z-index:400;
         width:44px;height:44px;border-radius:50%;
-        background:linear-gradient(135deg,var(--v),var(--c));
+        background:linear-gradient(135deg,var(--v),var(--grn));
         border:none;color:#fff;font-size:18px;cursor:pointer;
         display:flex;align-items:center;justify-content:center;
-        box-shadow:0 4px 20px rgba(124,58,237,.5);transition:transform .2s,box-shadow .2s; }
-      .btt:hover { transform:translateY(-3px)scale(1.05);box-shadow:0 8px 28px rgba(124,58,237,.7); }
+        box-shadow:0 4px 20px rgba(59,130,246,.5);transition:transform .2s,box-shadow .2s; }
+      .btt:hover { transform:translateY(-3px)scale(1.05);box-shadow:0 8px 28px rgba(59,130,246,.8); }
 
       /* ── Buttons ── */
-      .bp { background:linear-gradient(135deg,var(--v),#6d28d9);color:#fff;border:none;
+      .bp { background:linear-gradient(135deg,var(--v),#0369a1);color:#fff;border:none;
         border-radius:10px;padding:13px 28px;font-size:14px;font-weight:600;cursor:pointer;
         position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;
         display:inline-flex;align-items:center;gap:6px;
-        box-shadow:0 4px 16px rgba(124,58,237,.35); }
+        box-shadow:0 4px 16px rgba(59,130,246,.4); }
       .bp::after { content:'';position:absolute;inset:0;
         background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);
         opacity:0;transition:opacity .2s; }
-      .bp:hover { transform:translateY(-2px);box-shadow:0 8px 28px rgba(124,58,237,.55); }
+      .bp:hover { transform:translateY(-2px);box-shadow:0 8px 28px rgba(59,130,246,.65); }
       .bp:hover::after { opacity:1; }
       .bo { background:rgba(255,255,255,.04);color:var(--text);
         border:1px solid rgba(255,255,255,.12);border-radius:10px;
         padding:13px 28px;font-size:14px;font-weight:600;cursor:pointer;
         transition:var(--ease);backdrop-filter:blur(8px); }
-      .bo:hover { border-color:var(--v);color:var(--vl);background:rgba(124,58,237,.08);transform:translateY(-2px); }
+      .bo:hover { border-color:var(--v);color:var(--vl);background:rgba(59,130,246,.1);transform:translateY(-2px); }
       .bfw { width:100%;justify-content:center; }
 
       /* ── Nav (floating pill) ── */
@@ -298,15 +298,15 @@ function Styles() {
         background:rgba(5,11,22,.8);backdrop-filter:blur(24px)saturate(200%);
         border:1px solid rgba(255,255,255,.07);border-radius:50px;
         padding:7px 7px 7px 20px;
-        box-shadow:0 4px 24px rgba(0,0,0,.35),0 0 0 1px rgba(124,58,237,.06);
+        box-shadow:0 4px 24px rgba(0,0,0,.35),0 0 0 1px rgba(59,130,246,.08);
         transition:border-color .3s; }
-      .nav-pill:hover { border-color:rgba(124,58,237,.18); }
+      .nav-pill:hover { border-color:rgba(59,130,246,.2); }
       .nlg { display:flex;align-items:center;gap:10px;cursor:pointer; }
       .nlc { width:46px;height:46px;border-radius:50%;
-        background:linear-gradient(135deg,var(--v),var(--c));
+        background:linear-gradient(135deg,var(--v),var(--grn));
         display:flex;align-items:center;justify-content:center;
         font-weight:800;font-size:13px;color:#fff;flex-shrink:0;
-        box-shadow:0 0 16px rgba(124,58,237,.6);
+        box-shadow:0 0 16px rgba(59,130,246,.7);
         padding:2px;overflow:hidden; }
       .nlc img { width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;display:block; }
       .nln { font-weight:700;font-size:15px;background:linear-gradient(90deg,var(--text),var(--tm));
@@ -315,11 +315,11 @@ function Styles() {
       .nb { background:none;border:none;cursor:pointer;color:var(--tm);
         font-size:13px;font-weight:500;padding:7px 14px;border-radius:50px;transition:var(--ease); }
       .nb:hover { color:var(--text);background:rgba(255,255,255,.06); }
-      .nb.on { color:var(--vl);background:rgba(124,58,237,.15); }
-      .ncta { background:linear-gradient(135deg,var(--v),#6d28d9);color:#fff;border:none;
+      .nb.on { color:var(--vl);background:rgba(59,130,246,.15); }
+      .ncta { background:linear-gradient(135deg,var(--v),#0369a1);color:#fff;border:none;
         border-radius:50px;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;
-        transition:var(--ease);box-shadow:0 2px 12px rgba(124,58,237,.4); }
-      .ncta:hover { box-shadow:0 4px 20px rgba(124,58,237,.65);transform:translateY(-1px); }
+        transition:var(--ease);box-shadow:0 2px 12px rgba(59,130,246,.5); }
+      .ncta:hover { box-shadow:0 4px 20px rgba(59,130,246,.75);transform:translateY(-1px); }
       .hbg { display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px; }
       .hbg span { display:block;width:20px;height:2px;background:var(--tm);border-radius:2px;transition:var(--ease); }
       .hbg:hover span { background:var(--text); }
@@ -329,7 +329,7 @@ function Styles() {
       .mb { background:none;border:none;cursor:pointer;color:var(--tm);
         font-size:15px;font-weight:500;padding:10px 16px;text-align:left;
         border-radius:10px;transition:var(--ease); }
-      .mb:hover,.mb.on { color:var(--vl);background:rgba(124,58,237,.1); }
+      .mb:hover,.mb.on { color:var(--vl);background:rgba(59,130,246,.12); }
 
       /* ── Sections ── */
       .sec { padding: 110px 0; }
@@ -346,14 +346,14 @@ function Styles() {
 
       /* ── Tags ── */
       .tags { display:flex;flex-wrap:wrap;gap:6px; }
-      .tag  { background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.22);
+      .tag  { background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.22);
         color:var(--vl);border-radius:6px;padding:4px 11px;font-size:12px;font-weight:500;
         transition:var(--ease); }
-      .tag:hover { background:rgba(124,58,237,.16);border-color:rgba(124,58,237,.45); }
+      .tag:hover { background:rgba(59,130,246,.16);border-color:rgba(59,130,246,.45); }
       .tag-c { background:rgba(6,182,212,.07);border-color:rgba(6,182,212,.22);color:var(--c2); }
       .tag-d { background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08);color:var(--tm);
         display:inline-flex;align-items:center;gap:6px;padding:6px 12px; }
-      .tag-d:hover { background:rgba(255,255,255,.08);border-color:rgba(124,58,237,.28);color:var(--text); }
+      .tag-d:hover { background:rgba(255,255,255,.08);border-color:rgba(59,130,246,.3);color:var(--text); }
       .skill-logo { width:15px;height:15px;object-fit:contain;flex-shrink:0; }
       .skill-logo-inv { filter:brightness(0) invert(1);opacity:.75; }
       .skill-svg { width:15px;height:15px;flex-shrink:0;color:var(--vl); }
@@ -764,11 +764,25 @@ const SKILL_LOGOS = {
   "CSS3": { src: `${DI}/css3/css3-original.svg` },
   "SQLite": { src: `${DI}/sqlite/sqlite-original.svg` },
   "MySQL": { src: `${DI}/mysql/mysql-original.svg` },
+  "PostgreSQL": { src: `${DI}/postgresql/postgresql-original.svg` },
   "Git": { src: `${DI}/git/git-original.svg` },
   "GitHub": { src: `${DI}/github/github-original.svg`, invert: true },
   "VS Code": { src: `${DI}/vscode/vscode-original.svg` },
   "Postman": { src: `${DI}/postman/postman-original.svg` },
+  "FastAPI": { src: `${DI}/fastapi/fastapi-original.svg` },
+  "Next.js": { src: `${DI}/nextjs/nextjs-original.svg`, invert: true },
+  "TypeScript": { src: `${DI}/typescript/typescript-original.svg` },
+  "Tailwind CSS": { src: `${DI}/tailwindcss/tailwindcss-original.svg` },
   "REST APIs": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="5" cy="12" r="2.5" /><circle cx="19" cy="6" r="2.5" /><circle cx="19" cy="18" r="2.5" /><path d="M7.5 12h5M16.5 6l-7 4.5M16.5 18l-7-4.5" /></svg> },
+  "OpenAI API": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v10M7 12h10" /><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none" /></svg> },
+  "LangChain": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M5 12h3M8 9l2 3-2 3M16 12h3M16 9l-2 3 2 3M12 5v3.5M12 15.5V19" /></svg> },
+  "LangGraph": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="6" cy="6" r="2" /><circle cx="18" cy="6" r="2" /><circle cx="12" cy="15" r="2" /><path d="M8 7.5l3 5M16 7.5l-3 5" /></svg> },
+  "Multi-Agent Systems": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="6" cy="8" r="2" /><circle cx="12" cy="4" r="2" /><circle cx="18" cy="8" r="2" /><circle cx="12" cy="14" r="2" /><path d="M8 9.5l2 2M16 9.5l-2 2M12 6v6" /></svg> },
+  "Prompt Engineering": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /><path d="M12 5l-2 3h4l-2-3" /></svg> },
+  "Vector Databases": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 8l3 4 3-4M6 15h12" /><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" /></svg> },
+  "Slack API": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="7" cy="6" r="1.5" /><circle cx="17" cy="6" r="1.5" /><circle cx="7" cy="16" r="1.5" /><circle cx="17" cy="16" r="1.5" /><path d="M7 7.5v8M17 7.5v8M7.5 12h9" /></svg> },
+  "Freshworks CRM API": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 4v3M8 4v3" /><path d="M7 11h10M7 15h10" /></svg> },
+  "Google Sheets API": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 3v18M15 3v18M3 9h18M3 15h18" /></svg> },
   "Django Admin": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="3" width="18" height="4" rx="1" /><rect x="3" y="10" width="8" height="11" rx="1" /><rect x="13" y="10" width="8" height="5" rx="1" /><rect x="13" y="17" width="8" height="4" rx="1" /></svg> },
   "Django ORM": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><ellipse cx="12" cy="6" rx="8" ry="3" /><path d="M4 6v5c0 1.66 3.58 3 8 3s8-1.34 8-3V6" /><path d="M4 11v5c0 1.66 3.58 3 8 3s8-1.34 8-3v-5" /></svg> },
   "Responsive Design": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="2" y="5" width="14" height="10" rx="1.5" /><rect x="16" y="8" width="6" height="7" rx="1" /><path d="M6 19h6M9 15v4" /></svg> },
@@ -778,6 +792,7 @@ const SKILL_LOGOS = {
   "Automation": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M12 2a10 10 0 0 1 7.39 16.74" /><path d="M12 22a10 10 0 0 1-7.39-16.74" /><path d="M12 8v4l3 3" /></svg> },
   "Intelligent Workflows": { svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="2" y="4" width="5" height="4" rx="1" /><rect x="9.5" y="4" width="5" height="4" rx="1" /><rect x="17" y="4" width="5" height="4" rx="1" /><rect x="5.5" y="14" width="5" height="4" rx="1" /><rect x="13.5" y="14" width="5" height="4" rx="1" /><path d="M4.5 8v2.5h15V8M12 11.5V14M8 11.5v1a1 1 0 0 0 1 1h1M16 11.5v1a1 1 0 0 1-1 1h-1" /></svg> },
 };
+
 
 // ─── SERVICE ICONS ────────────────────────────────────────────────────────────
 const ServiceIconMap = {
@@ -839,6 +854,19 @@ const ServiceIconMap = {
       <rect x="13" y="11" width="9" height="10" rx="2" stroke="url(#gi4)" strokeWidth="1.5" />
       <rect x="2" y="16" width="9" height="5" rx="2" stroke="url(#gi4)" strokeWidth="1.5" />
       <path d="M5 19l2-2 2 2" stroke="url(#gi4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  sql: (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="gi5" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#a78bfa" />
+          <stop offset="100%" stopColor="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <rect x="3" y="3" width="18" height="18" rx="4" stroke="url(#gi5)" strokeWidth="1.5" />
+      <path d="M3 9h18M3 15h18" stroke="url(#gi5)" strokeWidth="1.5" />
+      <path d="M9 3v18M15 3v18" stroke="url(#gi5)" strokeWidth="1.5" />
     </svg>
   ),
 };
@@ -1059,14 +1087,14 @@ export default function Portfolio() {
                       <span className="at-block-dot at-block-dot-v" />
                       <span className="at-block-label at-block-label-v">Python Full Stack</span>
                     </div>
-                    <p>I joined <strong>Digital Edify Technologies</strong> as an intern in late 2024 and picked up the full stack pretty fast. Most of my work has been <strong>Python and Django</strong>  writing APIs, setting up data models, building admin panels, hooking up frontends. The <strong>Nagarjuna Steels CRM</strong> was my biggest project so far  real users, real data, had to actually hold up.</p>
+                    <p>I joined <strong>Digital Edify Technologies</strong> in November 2024 as a full-time employee and have rapidly grown my expertise. I've built <strong>3+ production-grade applications</strong> using <strong>Python, Django, and React/Next.js</strong> — designing REST APIs, optimizing databases, and building scalable systems. Key projects include the <strong>Nagarjuna Steels CRM</strong>, <strong>HRMS system</strong>, and enterprise solutions serving real clients with real data at scale.</p>
                   </div>
                   <div className="at-block at-block-c">
                     <div className="at-block-title">
                       <span className="at-block-dot at-block-dot-c" />
                       <span className="at-block-label at-block-label-c">Agentic AI Developer</span>
                     </div>
-                    <p>The part I find most interesting is making the backend actually think. Not just serve data  but trigger things, respond to conditions, work alongside <strong>LLMs</strong> to make decisions. I've been building toward that with projects like the <strong>Smart Car Agentic Dashboard</strong>, where the system does the monitoring so the user doesn't have to.</p>
+                    <p>I architect intelligent automation systems using <strong>LangChain, OpenAI APIs, and multi-agent pipelines</strong>. I've built systems that autonomously monitor CRM workflows, trigger Slack notifications, and generate AI insights  all running 24/7 with <strong>zero human intervention</strong>. The backend doesn't just serve data  it responds, decides, and acts using LLMs to make intelligent decisions.</p>
                   </div>
                 </div>
                 <div className="at-act">
@@ -1084,7 +1112,7 @@ export default function Portfolio() {
         {/* ── EXPERIENCE ── */}
         <section id="experience" className="sec">
           <div className="cnt-s">
-            <SectionHeader num="03 / Experience" title="Professional Journey" sub="15 months at one company — intern to Python full stack to agentic AI" revRef={secRef3} revOn={sec3} />
+            <SectionHeader num="03 / Experience" title="Professional Journey" sub="1.5+ years at Digital Edify — from intern to full stack to agentic AI developer" revRef={secRef3} revOn={sec3} />
             <div className="timeline">
               {DATA.experience.map((exp, i) => <ExperienceItem key={i} exp={exp} delay={(i % 3) + 1} />)}
             </div>
